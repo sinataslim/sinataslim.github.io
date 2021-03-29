@@ -55,7 +55,7 @@
         var NYCLayer = L.geoJSON().addTo(map)
 
         // read the NYC coordinates and add to the NYCLayer
-        var nyc = d3.json("NYCboundaries.json.json")
+        var nyc = d3.json("NYCboundaries.json")
         var SqGrid = d3.json("squareGrid.json")
         
         Promise.all([nyc, SqGrid]).then(ready)
